@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "Pacifico-Regular";
+    src: url(Pacifico-Regular.ttf);
+}
+
+body {
+    font-family: "Pacifico-Regular";
+}
+
+head {
+    font-family: "Pacifico-Regular";
+    
+}
+
+h1{
+    text-align: center;
+    font-size: 3pc;
+}
+
+form {
+    font-size: 1.5pc;
+}
+
+.center {
+    margin: auto;
+    width: 10%;
+    padding: 10px;
+  }
+
+  img{
+      margin-top: 1cm;
+      resize: both;
+  }
+
+  .grid-container {
+    display: grid; 
+    grid-template-rows:25% 1fr 25%; 
+    grid-template-columns:20% 20% 20% 20%;
+    grid-gap: 20px 20px; 
+  }
+
+  .grid-item {
+    background-color: bisque;
+    border-style: solid;
+    text-align: center;
+  }
+
+ 
+  .cards {
+    display: flex;
+
+    /* Put a card in the next row when previous cards take all width */
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-right: -8px;
+    background: red;
+}
+
+.cards__item {
+    /* There will be 4 cards per row */
+    flex-basis: 25%;
+    text-align: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+}
